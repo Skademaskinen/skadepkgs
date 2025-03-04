@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  tests:
+  build:
     strategy:
       matrix:
         package: [ putricide, rp-utils, folkevognen, homepage, sketch-bot, lavalink, tools.wallpaper, tools.banner ]
