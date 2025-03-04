@@ -3,6 +3,11 @@
     inputs = {
         nixpkgs.url = "nixpkgs/nixos-unstable";
         # i would use the // operator together with builtins.mapAttrs, but noooo, inputs are cursed
+        # pin gradle2nix
+        gradle2nix = {
+            url = "github:tadfisher/gradle2nix/v2";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
         homepage = {
             url = "github:Skademaskinen/homepage";
             inputs.nixpkgs.follows = "nixpkgs";
@@ -10,6 +15,7 @@
         rp-utils = {
             url = "github:Skademaskinen/RP-Utils";
             inputs.nixpkgs.follows = "nixpkgs";
+            inputs.gradle2nix.follows = "gradle2nix";
         };
         putricide = {
             url = "github:Skademaskinen/Putricide";
@@ -22,6 +28,7 @@
         folkevognen = {
             url = "github:Skademaskinen/Folkevognen";
             inputs.nixpkgs.follows = "nixpkgs";
+            inputs.gradle2nix.follows = "gradle2nix";
         };
     };
 
