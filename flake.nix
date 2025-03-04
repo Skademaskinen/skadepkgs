@@ -10,6 +10,7 @@
         rp-utils = {
             url = "github:Skademaskinen/RP-Utils";
             inputs.nixpkgs.follows = "nixpkgs";
+            inputs.gradle2nix.follows = "rp-utils";
         };
         putricide = {
             url = "github:Skademaskinen/Putricide";
@@ -22,6 +23,7 @@
         folkevognen = {
             url = "github:Skademaskinen/Folkevognen";
             inputs.nixpkgs.follows = "nixpkgs";
+            inputs.gradle2nix.follows = "folkevognen";
         };
     };
 
