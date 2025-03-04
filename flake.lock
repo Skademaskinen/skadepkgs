@@ -1,0 +1,245 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "inputs": {
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1731533236,
+        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "flake-utils_2": {
+      "inputs": {
+        "systems": "systems_2"
+      },
+      "locked": {
+        "lastModified": 1731533236,
+        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "folkevognen": {
+      "inputs": {
+        "gradle2nix": "gradle2nix",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1741112785,
+        "narHash": "sha256-O+YgH0PX8a63hE3K4QWqTakYRgeaWNQMNBu4LVe5nr8=",
+        "owner": "Skademaskinen",
+        "repo": "Folkevognen",
+        "rev": "fed49dc4ea96da26137ec3075b265cec04538055",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Skademaskinen",
+        "repo": "Folkevognen",
+        "type": "github"
+      }
+    },
+    "gradle2nix": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": [
+          "folkevognen",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1738375406,
+        "narHash": "sha256-dvJxvDZCDnh4pY5T99thmQOqjnEeXmMAUeC0Hc4T7U4=",
+        "owner": "tadfisher",
+        "repo": "gradle2nix",
+        "rev": "2ca058c5b7f3b37f0c11258a78bd0110a675caae",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tadfisher",
+        "ref": "v2",
+        "repo": "gradle2nix",
+        "type": "github"
+      }
+    },
+    "gradle2nix_2": {
+      "inputs": {
+        "flake-utils": "flake-utils_2",
+        "nixpkgs": [
+          "rp-utils",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1738375406,
+        "narHash": "sha256-dvJxvDZCDnh4pY5T99thmQOqjnEeXmMAUeC0Hc4T7U4=",
+        "owner": "tadfisher",
+        "repo": "gradle2nix",
+        "rev": "2ca058c5b7f3b37f0c11258a78bd0110a675caae",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tadfisher",
+        "ref": "v2",
+        "repo": "gradle2nix",
+        "type": "github"
+      }
+    },
+    "homepage": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1741113773,
+        "narHash": "sha256-ULsIBVZ2blXrwizNR8WcPU1VRNhVZT8xQOtIFB/FBwg=",
+        "owner": "Skademaskinen",
+        "repo": "homepage",
+        "rev": "38db17fb42d0958f5380cbf167916f9b6cd36f28",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Skademaskinen",
+        "repo": "homepage",
+        "type": "github"
+      }
+    },
+    "nix-velocity": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1741112655,
+        "narHash": "sha256-A4qOkNsSnuPt+tg3Dn86W3fd895/NHIt83aGF2gEhgs=",
+        "owner": "Skademaskinen",
+        "repo": "nix-velocity",
+        "rev": "35e308546a92ffe42f6b45ece4cae52d567c3c0a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Skademaskinen",
+        "repo": "nix-velocity",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1741010256,
+        "narHash": "sha256-WZNlK/KX7Sni0RyqLSqLPbK8k08Kq7H7RijPJbq9KHM=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "ba487dbc9d04e0634c64e3b1f0d25839a0a68246",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "ref": "nixos-unstable",
+        "type": "indirect"
+      }
+    },
+    "putricide": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1741112290,
+        "narHash": "sha256-xkKelk7tJdh06R744tkWU7jfwUaNaXo2Io+uqpf/Pls=",
+        "owner": "Skademaskinen",
+        "repo": "Putricide",
+        "rev": "89d4d81460a7f9ac1f9179706e15e11f85fd3603",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Skademaskinen",
+        "repo": "Putricide",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "folkevognen": "folkevognen",
+        "homepage": "homepage",
+        "nix-velocity": "nix-velocity",
+        "nixpkgs": "nixpkgs",
+        "putricide": "putricide",
+        "rp-utils": "rp-utils"
+      }
+    },
+    "rp-utils": {
+      "inputs": {
+        "gradle2nix": "gradle2nix_2",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1741112887,
+        "narHash": "sha256-MBvheZYLxU5H4DKsnS+KnW8NQ2BGQbQ6OXzAspdeO9k=",
+        "owner": "Skademaskinen",
+        "repo": "RP-Utils",
+        "rev": "a7f836ac988cc41a9a1add517df7610c99b56b5a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Skademaskinen",
+        "repo": "RP-Utils",
+        "type": "github"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
+    "systems_2": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
