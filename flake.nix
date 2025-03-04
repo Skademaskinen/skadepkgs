@@ -25,7 +25,7 @@
         };
     };
 
-    outputs = inputs@{ self, nixpkgs, ... }: let
+    outputs = inputs@{ nixpkgs, ... }: let
         lib = import ./lib;
     in {
         packages = lib // lib.eachSystem (system: {
@@ -34,5 +34,8 @@
             putricide = inputs.putricide.packages.${system}.default;
             folkevognen = inputs.folkevognen.packages.${system}.default;
         } // import ./packages { pkgs = import nixpkgs { inherit system; }; });
+
+        nixosModules = import ./modules/nixos;
+        homeManagerModules = import ./modules/home;
     };
 }
