@@ -14,6 +14,6 @@ pkgs.stdenv.mkDerivation rec {
         mkdir -p $out/bin
         mkdir -p $out/share/lavalink
         cp $src $out/bin/lavalink
-        echo "${builtins.readFile ../../files/lavalink.yml}" > $out/share/lavalink/application.yml
+        echo "${builtins.readFile ./lavalink.yml}" > $out/share/lavalink/application.yml
     '';
 }
