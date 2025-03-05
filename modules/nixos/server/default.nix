@@ -1,6 +1,9 @@
-{...}: 
+{ ... }: 
 
 {
-    options = import ./options;
-    config = import ./config;
+    imports = [
+        ../generic
+        ./options
+        ./config
+    ];
 }

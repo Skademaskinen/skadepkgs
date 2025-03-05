@@ -2,7 +2,6 @@
 
 {
     imports = [
-        ../generic
         ./options
         ./config
     ];

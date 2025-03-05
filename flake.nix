@@ -25,7 +25,7 @@
         };
     };
 
-    outputs = inputs@{ nixpkgs, ... }: let
+    outputs = inputs@{ self, nixpkgs, ... }: let
         lib = import ./lib;
     in {
         packages = lib // lib.eachSystem (system: {
@@ -33,6 +33,20 @@
             rp-utils = inputs.rp-utils.packages.${system}.default;
             putricide = inputs.putricide.packages.${system}.default;
             folkevognen = inputs.folkevognen.packages.${system}.default;
+            test = builtins.mapAttrs (name: mod: (nixpkgs.lib.nixosSystem {inherit system; modules = mod; }).config.system.build.vm) {
+                server = [
+                    ./test/server
+                    self.nixosModules.server
+                ];
+                desktop = [
+                    ./test/desktop
+                    self.nixosModules.desktop
+                ];
+                generic = [
+                    ./test/generic
+                    self.nixosModules.default
+                ];
+            };
         } // import ./packages { pkgs = import nixpkgs { inherit system; }; });
 
         nixosModules = import ./modules/nixos;
