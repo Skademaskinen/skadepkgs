@@ -1,0 +1,9 @@
+{ ... }: 
+
+{
+    imports = [
+        ../generic
+        ./options
+        ./config
+    ];
+}
