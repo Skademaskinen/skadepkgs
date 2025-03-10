@@ -77,7 +77,9 @@
     },
     "folkevognen": {
       "inputs": {
-        "gradle2nix": "gradle2nix",
+        "gradle2nix": [
+          "gradle2nix"
+        ],
         "nixpkgs": [
           "nixpkgs"
         ]
@@ -314,6 +316,7 @@
       "inputs": {
         "folkevognen": "folkevognen",
         "home-manager": "home-manager",
+        "gradle2nix": "gradle2nix",
         "homepage": "homepage",
         "nix-velocity": "nix-velocity",
         "nixpkgs": "nixpkgs",
@@ -324,7 +327,9 @@
     },
     "rp-utils": {
       "inputs": {
-        "gradle2nix": "gradle2nix_2",
+        "gradle2nix": [
+          "gradle2nix"
+        ],
         "nixpkgs": [
           "nixpkgs"
         ]
