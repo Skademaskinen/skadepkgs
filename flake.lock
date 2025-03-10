@@ -1,5 +1,26 @@
 {
   "nodes": {
+    "flake-parts": {
+      "inputs": {
+        "nixpkgs-lib": [
+          "nixvim",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1738453229,
+        "narHash": "sha256-7H9XgNiGLKN1G1CgRh0vUL4AheZSYzPm+zmZ7vxbJdo=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "32ea77a06711b758da0ad9bd6a844c5740a87abd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "type": "github"
+      }
+    },
     "flake-utils": {
       "inputs": {
         "systems": "systems"
@@ -36,6 +57,24 @@
         "type": "github"
       }
     },
+    "flake-utils_3": {
+      "inputs": {
+        "systems": "systems_3"
+      },
+      "locked": {
+        "lastModified": 1731533236,
+        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
     "folkevognen": {
       "inputs": {
         "gradle2nix": "gradle2nix",
@@ -44,11 +83,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1741112785,
-        "narHash": "sha256-O+YgH0PX8a63hE3K4QWqTakYRgeaWNQMNBu4LVe5nr8=",
+        "lastModified": 1741447146,
+        "narHash": "sha256-xEHnatW73ajBoa9fI+WgRSHiZ1JbN8O6F6KgNehNocU=",
         "owner": "Skademaskinen",
         "repo": "Folkevognen",
-        "rev": "fed49dc4ea96da26137ec3075b265cec04538055",
+        "rev": "d2fc99152f90d8b4662104cbfde4d077918184ad",
         "type": "github"
       },
       "original": {
@@ -82,7 +121,7 @@
     },
     "gradle2nix_2": {
       "inputs": {
-        "flake-utils": "flake-utils_2",
+        "flake-utils": "flake-utils_3",
         "nixpkgs": [
           "rp-utils",
           "nixpkgs"
@@ -103,6 +142,26 @@
         "type": "github"
       }
     },
+    "home-manager": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1741635347,
+        "narHash": "sha256-2aYfV44h18alHXopyfL4D9GsnpE5XlSVkp4MGe586VU=",
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "rev": "7fb8678716c158642ac42f9ff7a18c0800fea551",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "type": "github"
+      }
+    },
     "homepage": {
       "inputs": {
         "nixpkgs": [
@@ -110,16 +169,44 @@
         ]
       },
       "locked": {
-        "lastModified": 1741113773,
-        "narHash": "sha256-ULsIBVZ2blXrwizNR8WcPU1VRNhVZT8xQOtIFB/FBwg=",
+        "lastModified": 1741647117,
+        "narHash": "sha256-UDshFXnT59S/ViDcPvqvDzp9QyCnzA1d+fQfTUpv380=",
         "owner": "Skademaskinen",
         "repo": "homepage",
-        "rev": "38db17fb42d0958f5380cbf167916f9b6cd36f28",
+        "rev": "6058e530bc49c23ecf0def347191be6ce3b93bf7",
         "type": "github"
       },
       "original": {
         "owner": "Skademaskinen",
         "repo": "homepage",
+        "type": "github"
+      }
+    },
+    "ixx": {
+      "inputs": {
+        "flake-utils": [
+          "nixvim",
+          "nuschtosSearch",
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "nixvim",
+          "nuschtosSearch",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1729958008,
+        "narHash": "sha256-EiOq8jF4Z/zQe0QYVc3+qSKxRK//CFHMB84aYrYGwEs=",
+        "owner": "NuschtOS",
+        "repo": "ixx",
+        "rev": "9fd01aad037f345350eab2cd45e1946cc66da4eb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NuschtOS",
+        "ref": "v0.0.6",
+        "repo": "ixx",
         "type": "github"
       }
     },
@@ -130,11 +217,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1741112655,
-        "narHash": "sha256-A4qOkNsSnuPt+tg3Dn86W3fd895/NHIt83aGF2gEhgs=",
+        "lastModified": 1741650102,
+        "narHash": "sha256-QMhzQI7Rptv0wCngWsc23MJT6gSiuRkkKqsL7iiaHX0=",
         "owner": "Skademaskinen",
         "repo": "nix-velocity",
-        "rev": "35e308546a92ffe42f6b45ece4cae52d567c3c0a",
+        "rev": "eaf3585fddf8bc8ec0e207ff512322b16d7bd3af",
         "type": "github"
       },
       "original": {
@@ -145,17 +232,62 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1741010256,
-        "narHash": "sha256-WZNlK/KX7Sni0RyqLSqLPbK8k08Kq7H7RijPJbq9KHM=",
+        "lastModified": 1741513245,
+        "narHash": "sha256-7rTAMNTY1xoBwz0h7ZMtEcd8LELk9R5TzBPoHuhNSCk=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "ba487dbc9d04e0634c64e3b1f0d25839a0a68246",
+        "rev": "e3e32b642a31e6714ec1b712de8c91a3352ce7e1",
         "type": "github"
       },
       "original": {
         "id": "nixpkgs",
         "ref": "nixos-unstable",
         "type": "indirect"
+      }
+    },
+    "nixvim": {
+      "inputs": {
+        "flake-parts": "flake-parts",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "nuschtosSearch": "nuschtosSearch"
+      },
+      "locked": {
+        "lastModified": 1741098523,
+        "narHash": "sha256-gXDSXDr6tAb+JgxGMvcEjKC9YO8tVOd8hMMZHJLyQ6Q=",
+        "owner": "nix-community",
+        "repo": "nixvim",
+        "rev": "03065fd4708bfdf47dd541d655392a60daa25ded",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nixvim",
+        "type": "github"
+      }
+    },
+    "nuschtosSearch": {
+      "inputs": {
+        "flake-utils": "flake-utils_2",
+        "ixx": "ixx",
+        "nixpkgs": [
+          "nixvim",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1738508923,
+        "narHash": "sha256-4DaDrQDAIxlWhTjH6h/+xfG05jt3qDZrZE/7zDLQaS4=",
+        "owner": "NuschtOS",
+        "repo": "search",
+        "rev": "86e2038290859006e05ca7201425ea5b5de4aecb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NuschtOS",
+        "repo": "search",
+        "type": "github"
       }
     },
     "putricide": {
@@ -181,9 +313,11 @@
     "root": {
       "inputs": {
         "folkevognen": "folkevognen",
+        "home-manager": "home-manager",
         "homepage": "homepage",
         "nix-velocity": "nix-velocity",
         "nixpkgs": "nixpkgs",
+        "nixvim": "nixvim",
         "putricide": "putricide",
         "rp-utils": "rp-utils"
       }
@@ -225,6 +359,21 @@
       }
     },
     "systems_2": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
+    "systems_3": {
       "locked": {
         "lastModified": 1681028828,
         "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",

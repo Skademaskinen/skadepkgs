@@ -2,6 +2,14 @@
     description = "NixOS modules and packages for personal use";
     inputs = {
         nixpkgs.url = "nixpkgs/nixos-unstable";
+        home-manager = {
+            url = "github:nix-community/home-manager";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
+        nixvim = {
+            url = "github:nix-community/nixvim";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
         # i would use the // operator together with builtins.mapAttrs, but noooo, inputs are cursed
         homepage = {
             url = "github:Skademaskinen/homepage";
@@ -49,7 +57,7 @@
             };
         } // import ./packages { pkgs = import nixpkgs { inherit system; }; });
 
-        nixosModules = import ./modules/nixos;
-        homeManagerModules = import ./modules/home;
+        nixosModules = import ./modules/nixos inputs;
+        homeManagerModules = import ./modules/home inputs;
     };
 }
