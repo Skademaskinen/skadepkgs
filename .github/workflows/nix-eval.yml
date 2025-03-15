@@ -1,4 +1,4 @@
-name: build nix packages
+name: evaluate nix store paths
 
 on:
   push:
