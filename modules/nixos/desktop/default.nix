@@ -5,5 +5,6 @@
         ../generic
         ./options
         ./config
+        ../common/bootloader/grub
     ];
 }

@@ -1,7 +1,6 @@
 { config, pkgs, ... }:
 
 {
-    users.users.root.password = "1234";
     virtualisation.vmVariant.virtualisation.graphics = false;
 
     networking.hostName = "server";
@@ -41,4 +40,13 @@
         port = 8000;
     };
     environment.systemPackages = with pkgs; [nmap];
+    users.users.mast3r = config.skade.users.defaultUserConfig "mast3r" // {
+        password = "1234";
+        extraGroups = ["networkmanager" "wheel" "libvirtd" "tty" "dialout" "input" "audio"];
+    };
+    users.users.root = config.skade.users.defaultUserConfig "root" // {
+        password = "1234";
+        description = "System administrator";
+        isNormalUser = false;
+    };
 }
